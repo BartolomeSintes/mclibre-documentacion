@@ -1,0 +1,117 @@
+/* Bartolome Sintes Marco
+   http://www.mclibre.org
+
+   CSS: Documentacion software libre
+   26 de diciembre de 2016
+*/
+
+html { font-family: sans-serif; background-color: #DEDEDE;
+  text-align: justify; margin: 0px 10px; }
+
+section { border-top: solid 2px black; padding-top: 0; margin-top: 1em; clear: both; }
+section section { border-top: solid 1px black; }
+
+footer { margin-top: 2em; }
+
+h1 { font-size: 200%; text-align: center; margin-left:40px; font-weight: bold;}
+h2 { font-size: 120%; margin-left: -10px; font-weight: bold;}
+h3 { font-size: 110%; margin-left: -10px; font-weight: bold;}
+h4 { font-size: 105%; margin-left: -10px; font-weight: bold;}
+
+p { margin:5px 0px; }
+p.aviso { margin:10px; padding: 10px;
+  border-left: 2px red solid; color:red; }
+p.centrado { text-align: center; }
+.limpia { clear: both; }
+address#ultmod { border-top: black solid 1px; margin-top: 5px; padding-top: 5px;
+  clear: both; margin-left: -5px; }
+
+kbd { font-family: sans-serif; font-weight: bold; font-style: oblique; }
+
+hr { width: 100%; clear: both; }
+hr.corta { width: 50%; text-align: center; clear: both; margin-left: auto; margin-right: auto; }
+
+a img { border: none; }
+
+table.indice td { vertical-align: top; }
+th { text-align: center; }
+col.centrado { padding: 0px 10px; text-align: center;  }
+ul { margin-top: 0px; }
+li { clear: both; }
+img#vpp { position: absolute; top: 5px; left: 5px; border:none; }
+img.d { float: right; margin-left: 10px; margin-bottom: 5px; border: none; }
+img.i { float: left; margin-right: 10px; margin-bottom: 5px; border: none; }
+
+.incompleto { color: red; background-color: #FFEEFF; }
+
+div.miniaturas { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start; }
+div.miniaturas div { margin: 10px; padding: 5px 10px;
+  border: #D41308 2px solid; text-align: center; }
+div.miniaturas p { margin: 2px; font-size: 90%; }
+div.miniaturas img { border: #D41308 2px solid; padding: 5px; background-color: white; }
+div.limpia { clear: both; }
+p.limpia, hr { clear: both; }
+
+/* Menú  */
+
+@media screen {
+  html { margin-left: 4em; margin-right: 4em; }
+  div#menu {
+    position: fixed; top: 0; left: 0; width: 1em;
+    font-size: 300%; padding-left: 0.2em; }
+  div#menu p { margin: 5px 0 0; }
+  div#menu a { text-decoration: none; color: black; }
+}
+
+@media print {
+  html { margin-left: 0; margin-right: 0; }
+  div#menu { display: none; }
+}
+
+/* Pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  html { margin-left: 2em; margin-right: 2em; }
+  nav {
+    position: fixed; top: 0; left: 0;
+    font-size: 80%; padding-left: 0.2em; text-align: left; width: 14.5em; }
+  nav h2 { display: none; }
+  nav p { font-size: 350%; margin: 5px 0 0; }
+  nav a { text-decoration: none; color: black; }
+  nav div.toc { display: none; }
+  table.ejemplo td, table.indice td {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  pre {
+    white-space: pre-wrap;
+    text-align: left;
+  }
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 768px) {
+  html { margin-left: 12em; margin-right: 4em; }
+  nav {
+    position: fixed; top: 0; left: 0;
+    font-size: 80%; padding-left: 0.2em; text-align: left; width: 14.5em; }
+  nav h2 { font-size: 110%; text-align: left; margin: 0; padding: 0; }
+  nav p { font-size: 350%; margin: 5px 0 0; }
+  nav a { text-decoration: none; color: black; }
+  nav ul { padding-left: 1em; margin-top: 0}
+  nav ul li { margin: 0 0 0.1em; }
+  nav ul ul { padding-left: 0.5em; margin: 0; }
+  nav ul ul li { margin: 0; }
+}
+
+/* Impresora */
+@media print {
+  html { margin-left: 5px; margin-right: 0; margin-top: 0; }
+  div#menu { display: none; }
+  nav p { display: none; }
+  nav h2 { display: none; }
+  code { font-size: 100 !important; }
+  pre { white-space: pre-wrap !important; }
+  p.volver-principio { display: none; }
+  tr { page-break-inside:avoid; }
+}
