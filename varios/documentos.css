@@ -48,6 +48,7 @@ div.miniaturas { display: flex; flex-direction: row; flex-wrap: wrap; justify-co
 div.miniaturas div { margin: 10px; padding: 5px 10px;
   border: #D41308 2px solid; text-align: center; }
 div.miniaturas p { margin: 2px; font-size: 90%; }
+div.years p a { margin: 2px; font-size: 200%; text-decoration: none; color: black}
 div.miniaturas img { border: #D41308 2px solid; padding: 5px; background-color: white; }
 div.limpia { clear: both; }
 p.limpia, hr { clear: both; }
