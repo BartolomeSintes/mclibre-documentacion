@@ -4,4 +4,4 @@
 
 Documentación sobre software libre y contenidos libres
 
-Revistas y libros dedicados al software libre disponibles en http://www.mclibre.org/consultar/documentacion/
+Revistas y libros dedicados al software libre disponibles en https://www.mclibre.org/consultar/documentacion/
